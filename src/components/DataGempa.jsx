@@ -6,7 +6,7 @@ const DataGempa = () => {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_API_BMKG}/autogempa.json`)
+      .get(`https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json`)
       .then((response) => setDataGempa(response.data.Infogempa.gempa));
   }, []);
 
